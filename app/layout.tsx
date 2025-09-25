@@ -5,8 +5,12 @@ import { SiteHeader } from "../components/site-header";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Clerk Option A",
-  description: "Authentication with Clerk using Next.js App Router"
+  title: {
+    default: "UberHamster Overnight Boarding",
+    template: "%s | UberHamster"
+  },
+  description:
+    "UberHamster keeps your hamster happy and cared for with luxury overnight boarding, curated playtime, and seamless reservations."
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
